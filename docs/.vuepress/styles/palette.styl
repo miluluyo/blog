@@ -1,0 +1,63 @@
+//$accentColor =#2daebf//默认主题颜色
+//$textColor = #666//默认字体颜色
+// $borderColor = #eaecef//默认边框颜色
+// $codeBgColor = #282c34//默认背景颜色
+main::after {
+  background-image: url( 'https://img.xjh.me/random_img.php?type=bg&ctype=acg&return=302' );
+}
+main::after {
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.06;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+@media screen and (min-width: 720px) {
+  html, body {
+    background-color: transparent!important;
+  }
+  .sidebar, .navbar .links{
+    background-color: transparent!important;
+  }
+  .navbar{
+    background-color: rgba(255,255,255,0.6)!important;
+  }
+  .search-box input{
+    background: transparent url(/assets/img/search.83621669.svg) 0.6rem 0.6rem no-repeat!important;
+  }
+}
+// @media (min-width: 719px){
+//   .nav-links a:hover, .nav-links a.router-link-active {
+//       color: #2daebf;
+//   }
+//   .nav-item > a:not(.external):hover, .nav-item > a:not(.external).router-link-active {
+//       margin-bottom: -2px;
+//       border-bottom: 2px solid #2daebf;
+//   }
+// }
+
+body{font-family:"Noto Sans SC"!important; text-shadow: 0 3px 6px rgba(0,0,0,0.15)!important;}
+// color: #606975;color:#666
+html::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+}
+html::-webkit-scrollbar-thumb {
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 16px;
+}
+@import url("https://blog-static.cnblogs.com/files/miluluyo/siyuan.css");
